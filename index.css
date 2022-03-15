@@ -2,16 +2,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 body {
-
+font-family: 'Roboto', sans-serif;
+background-color:rgb(241, 241, 241);
 }
 
+main {
+  padding: 20px 30px;
+}
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 30px;
-    font-family: 'Roboto', sans-serif;
+    padding: 20px 60px;
     border-bottom: solid 2px black;
 
 }
@@ -69,3 +72,61 @@ li + li {
     background: hsl(0, 100%, 40%);
     color: white;
   } 
+
+  .main-content {
+  display: flex;
+justify-content: space-evenly;
+margin-top: 50px;
+}
+
+.left-content {
+  flex-basis: 40%;
+}
+
+#book {
+  box-shadow: 10px 10px 5px 5px rgb(148, 144, 144);
+}
+
+.reviews {
+  flex-basis: 35%;
+  background-color: white;
+  padding: 20px;
+ 
+
+}
+
+#review-1 {
+  background-color: orange;
+  font-size: 20px;
+ }
+ #review-2 {
+  background-color: rgb(224, 162, 216);
+  font-size: 20px;
+ }
+ #review-3 {
+  background-color:hsl(125, 36%, 51%);
+  font-size: 20px;
+ }
+
+#name {
+text-transform: uppercase;
+font-size: 24px;
+font-style: none;
+}
+
+dt {
+padding: 15px;
+border-radius: 10px;
+text-align: center;
+color:white;
+line-height: 1.5;
+ box-shadow: 10px 10px 5px  gray;
+}
+
+dd {
+margin: 15px 25px;
+font-size: 18px;
+line-height: 2;
+}
+
+
