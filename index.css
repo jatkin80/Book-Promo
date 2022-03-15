@@ -77,21 +77,41 @@ li + li {
   display: flex;
 justify-content: space-evenly;
 margin-top: 50px;
+
 }
 
 .left-content {
+    display: flex;
   flex-basis: 40%;
+ flex-flow: column;
+ justify-content: space-between;
+
+  
 }
 
 #book {
-  box-shadow: 10px 10px 5px 5px rgb(148, 144, 144);
+  
+  position: relative;
 }
 
+.book-img {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+
+}
+
+.book-img.top:hover {
+    opacity: 0;
+}
 .reviews {
   flex-basis: 35%;
   background-color: white;
-  padding: 20px;
- 
+  padding: 20px; 
 
 }
 
@@ -120,7 +140,7 @@ border-radius: 10px;
 text-align: center;
 color:white;
 line-height: 1.5;
- box-shadow: 10px 10px 5px  gray;
+box-shadow: 10px 10px 5px  gray;
 }
 
 dd {
@@ -129,4 +149,56 @@ font-size: 18px;
 line-height: 2;
 }
 
+.about-author {
+    
+    padding: 30px;
+    background-color: white;
+    margin: 50px 0;
+    margin-bottom: 0;
+}
 
+h2 {
+    font-size: 30px;
+    padding: 20px 0;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 20px;
+    background-color: hsl(210, 56%, 64%);
+    font-weight: 700;
+    color: hsl(0, 0%, 23%);
+  text-shadow: 2px 2px 4px rgb(214, 212, 212);
+  letter-spacing: 2.5px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 5px  gray;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+#about-book {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+    background-color: white;
+    margin: 35px 22px;
+
+    
+}
+
+.book-sum {
+    font-size: 30px;
+    padding: 20px 0;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 20px;
+    background-color: hsl(38, 84%, 59%);
+    font-weight: 700;
+    color: hsl(0, 0%, 23%);
+  text-shadow: 2px 2px 4px rgb(214, 212, 212);
+  letter-spacing: 2.5px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 5px  gray;
+}
